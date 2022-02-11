@@ -9,12 +9,20 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph'
+import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio';
 import Section from '../components/section';
 const Page = () => {
     return (
+        <Layout>
         <Container>
-            <Box borderRadius="lg" bg="whiteAlpha.200" p={3} mb={6} align="center">
+            <Box 
+                borderRadius="lg" 
+                bg="whiteAlpha.200" 
+                p={3} 
+                mb={6} 
+                align="center"
+            >
                 Hello, I&apos;m a full-stack developer based in Virginia, USA!
             </Box>
 
@@ -94,6 +102,7 @@ const Page = () => {
                 </Paragraph>
             </Section>
         </Container>
+        </Layout>
     );
 }
 
