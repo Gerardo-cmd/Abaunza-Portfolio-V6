@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import Navbar from '../navbar';
 import { Box, Container } from '@chakra-ui/react';
 import VoxelAstronautLoader from '../voxel-astronaut-loader'
+import Footer from '../footer';
 
 const LazyVoxelAstronaut = dynamic(() => import('../voxel-astronaut'), {
     ssr: false,
@@ -23,6 +24,7 @@ const Main = ({children, router}) => {
             <Container maxW="container.lg" pt={14}>
                 <LazyVoxelAstronaut />
                 {children}
+                <Footer />
             </Container>
         </Box>
     )
