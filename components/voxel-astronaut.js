@@ -53,7 +53,7 @@ const VoxelAstronaut = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.00001 + 4.8
+      const scale = scH * 0.000001 + 4.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
