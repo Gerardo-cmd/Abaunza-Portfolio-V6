@@ -23,7 +23,7 @@ const Page = () => {
                 mb={6} 
                 align="center"
             >
-                Hello, I&apos;m a full-stack developer based in Virginia, USA!
+                Hi, I&apos;m a full-stack developer based in Virginia, USA!
             </Box>
 
             <Box display={{ md: 'flex' }}>
@@ -31,7 +31,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         Gerardo Abaunza
                     </Heading>
-                    <p>Software Engineer ( Builder / Developer / Student )</p>
+                    <p>Software Engineer</p>
                 </Box>
                 <Box
                     flexShrink={0}
@@ -61,7 +61,7 @@ const Page = () => {
                 Gerardo is a Software Engineer based in Northern Virginia with a
                 passion for building software. When not online, he loves
                 hanging out with his friends and loved ones or cuddling up in his room. Currently, he is working at{' '}
-                <NextLink href="/experience">
+                <NextLink href="/experiences/cmtsolutions">
                     <Link>CMT Solutions</Link>
                 </NextLink>
                 .
@@ -84,13 +84,18 @@ const Page = () => {
                 Born in Fairfax, Virginia
                 </BioSection>
                 <BioSection>
-                <BioYear>2022</BioYear>
-                    Completed the Bachelor&apos;s Computer Science Program at George Mason Universiy
+                <BioYear>2018</BioYear>
+                    Graduated from Centreville High School
                 </BioSection>
                 <BioSection>
-                <BioYear>2021 - Present</BioYear>
-                    Works at CMT Solutions
+                <BioYear>2021</BioYear>
+                    Began working at CMT Solutions
                 </BioSection>
+                <BioSection>
+                <BioYear>2022</BioYear>
+                    Completed his Bachelor&apos;s in Computer Science at George Mason Universiy
+                </BioSection>
+                
             </Section>
 
             <Section delay={0.3}>
@@ -98,7 +103,7 @@ const Page = () => {
                 I ♥
                 </Heading>
                 <Paragraph>
-                Anime, Music, Games, Space
+                Anime, Games, Music, Space
                 </Paragraph>
             </Section>
         </Container>

@@ -1,11 +1,10 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import { JobGridItem } from '../components/grid-item'
 import { Meta } from '../components/work'
 import P from '../components/paragraph'
 
-import PublicisSapientLogo from '../public/images/publicis-sapient-logo.png'
 import CmtLogo from '../public/images/cmt-logo.jpeg'
 
 const Experience = () => (
@@ -15,14 +14,13 @@ const Experience = () => (
         Experience
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 2]} gap={6}>
         <Section delay={0.1}>
-          <GridItem id="CMT Solutions" title="CMT Solutions" thumbnail={CmtLogo}>
+          <JobGridItem id="cmtsolutions" title="CMT Solutions" thumbnail={CmtLogo} bold>
+            <h2>2021</h2>
             <Meta>Position</Meta>
             <p>Software Engineer Intern</p>
-            <Meta>Stack</Meta>
-            <p>React, Javascript, Ruby, Rails, Node.js, AWS</p>  
-          </GridItem>
+          </JobGridItem>
         </Section>
       </SimpleGrid>
     </Container>

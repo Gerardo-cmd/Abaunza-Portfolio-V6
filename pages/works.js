@@ -17,7 +17,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="applicationtracker" title="Job Application Tracker" thumbnail={thumbApplicationTracker}>
-            A stand alone application tracker 
+            A job application tracker 
           </WorkGridItem>
         </Section>
         <Section>
@@ -36,7 +36,7 @@ const Works = () => (
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
                 <WorkGridItem id="recipe" title="Recipe Application" thumbnail={thumbRecipe}>
-                    A recipe application
+                    An application that stores recipes
                 </WorkGridItem>
             </Section>
         </SimpleGrid>

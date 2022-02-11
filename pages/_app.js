@@ -5,7 +5,7 @@ import Chakra from '../components/chakra'
 
 function Website({ Component, pageProps, router }) {
   return (
-    <Chakra cookies={pageProps.cookies}>
+    <Chakra>
       <Fonts />
       <Layout router={router}>
         <AnimatePresence exitBeforeEnter initial={true}>

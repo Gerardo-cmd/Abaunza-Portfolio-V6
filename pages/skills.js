@@ -3,9 +3,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import PublicisSapientLogo from '../public/images/publicis-sapient-logo.png'
-import CmtLogo from '../public/images/cmt-logo.jpeg'
-
 const Skills = () => (
   <Layout title="Skills">
     <Container>
@@ -29,7 +26,7 @@ const Skills = () => (
             </GridItem>
         </Section>
         <Section delay={0.1}>
-            <GridItem id="Backend" title="Backend" bold>
+            <GridItem id="Backend" title="Backend / General" bold>
                 <SimpleGrid columns={[1, 2]} gap={1}>
                     <GridItem id="Node.js" title="Node.js" />  
                     <GridItem id="Express" title="Express" />
@@ -38,6 +35,9 @@ const Skills = () => (
                     <GridItem id="Rails" title="Rails" />
                     <GridItem id="Rspec" title="Rspec" />
                     <GridItem id="Firebase" title="Firebase" />
+                    <GridItem id="Java" title="Java" />
+                    <GridItem id="JUnit" title="JUnit" />
+                    <GridItem id="C" title="C" />
                 </SimpleGrid>
             </GridItem>
         </Section>
@@ -46,6 +46,7 @@ const Skills = () => (
                 <SimpleGrid columns={2} gap={1}>
                     <GridItem id="GitHub" title="GitHub" />  
                     <GridItem id="Jira" title="Jira" />
+                    <GridItem id="Trello" title="Trello" />
                     <GridItem id="Netlify" title="Netlify" />
                     <GridItem id="Heroku" title="Heroku" />
                 </SimpleGrid>
