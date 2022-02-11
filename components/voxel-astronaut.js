@@ -53,7 +53,7 @@ const VoxelAstronaut = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.00001 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -74,7 +74,7 @@ const VoxelAstronaut = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/astronaut-small.glb', {
+      loadGLTFModel(scene, '/astronaut-plant.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
