@@ -49,6 +49,7 @@ const Skills = () => (
                     <GridItem id="Trello" title="Trello" />
                     <GridItem id="Netlify" title="Netlify" />
                     <GridItem id="Heroku" title="Heroku" />
+                    <GridItem id="Vercel" title="Vercel" />
                 </SimpleGrid>
             </GridItem>
         </Section>
