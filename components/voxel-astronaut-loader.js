@@ -19,7 +19,7 @@ export const AstronautContainer = forwardRef(({ children }, ref) => (
     m="auto"
     mt={['-20px', '-60px', '-120px']}
     mb={['-40px', '-140px', '-200px']}
-    w={[260, 460, 620]}
+    w={[280, 460, 620]}
     h={[290, 490, 650]}
     position="relative"
   >
