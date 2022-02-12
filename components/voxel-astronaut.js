@@ -38,7 +38,7 @@ const VoxelAstronaut = () => {
   useEffect(() => {
     const { current: container } = refContainer
     if (container && !renderer) {
-      const scW = container.clientWidth
+      const scW = container.clientWidth * 1.1
       const scH = container.clientHeight
 
       const renderer = new THREE.WebGLRenderer({
@@ -53,7 +53,7 @@ const VoxelAstronaut = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.000001 + 5.4;
+      const scale = scH * 0.000001 + 5.3;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
