@@ -1,9 +1,8 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { JobGridItem } from '../components/grid-item'
 import { Meta } from '../components/work'
-import P from '../components/paragraph'
 
 import CmtLogo from '../public/images/cmt-logo.jpeg'
 
