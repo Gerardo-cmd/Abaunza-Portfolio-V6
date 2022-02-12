@@ -1,6 +1,6 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
@@ -27,8 +27,8 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/solarsystem-1.png" alt="Job Application Tracker" />
-      <WorkImage src="/images/works/solarsystem-2.png" alt="Job Application Tracker" />
+      <WorkImage src="/images/projects/solarsystem-1.png" alt="Job Application Tracker" />
+      <WorkImage src="/images/projects/solarsystem-2.png" alt="Job Application Tracker" />
     </Container>
   </Layout>
 )

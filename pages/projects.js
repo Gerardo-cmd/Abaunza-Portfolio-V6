@@ -3,15 +3,15 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbApplicationTracker from '../public/images/works/application-tracker-home.png'
-import thumbSolarSystem from '../public/images/works/solarsystem-1.png'
-import thumbRecipe from '../public/images/works/recipe-1.png'
+import thumbApplicationTracker from '../public/images/projects/application-tracker-home.png'
+import thumbSolarSystem from '../public/images/projects/solarsystem-1.png'
+import thumbRecipe from '../public/images/projects/recipe-1.png'
 
-const Works = () => (
-  <Layout title="Works">
+const Projects = () => (
+  <Layout title="Projects">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -45,5 +45,5 @@ const Works = () => (
   </Layout>
 )
 
-export default Works
+export default Projects
 export { getServerSideProps } from '../components/chakra'

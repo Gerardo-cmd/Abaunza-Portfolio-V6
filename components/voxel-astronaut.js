@@ -16,9 +16,9 @@ const VoxelAstronaut = () => {
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      30 * Math.sin(0.2 * Math.PI),
-      0,
-      45 * Math.cos(0.2 * Math.PI)
+      20 * Math.sin(0.2 * Math.PI),
+      15,
+      20 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -45,15 +45,15 @@ const VoxelAstronaut = () => {
         antialias: true,
         alpha: true
       })
-      renderer.setPixelRatio(window.devicePixelRatio)
-      renderer.setSize(scW, scH)
-      renderer.outputEncoding = THREE.sRGBEncoding
-      container.appendChild(renderer.domElement)
-      setRenderer(renderer)
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setSize(scW, scH);
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      container.appendChild(renderer.domElement);
+      setRenderer(renderer);
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.000001 + 4.5
+      const scale = scH * 0.000001 + 6;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -61,69 +61,70 @@ const VoxelAstronaut = () => {
         -scale,
         0.01,
         50000
-      )
-      camera.position.copy(initialCameraPosition)
-      camera.lookAt(target)
-      setCamera(camera)
+      );
+      camera.position.copy(initialCameraPosition);
+      camera.lookAt(target);
+      setCamera(camera);
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      const ambientLight = new THREE.AmbientLightProbe(0xcccccc, 2);
+      ambientLight.position.set(-10, 15, 0);
+      ambientLight.castShadow = true;
+      scene.add(ambientLight);
 
-      const controls = new OrbitControls(camera, renderer.domElement)
-      controls.autoRotate = true
-      controls.target = target
-      setControls(controls)
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.autoRotate = true;
+      controls.target = target;
+      setControls(controls);
 
-      loadGLTFModel(scene, '/astronaut-plant.glb', {
+      loadGLTFModel(scene, '/astronaut-glfb-ready.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
         animate()
         setLoading(false)
-      })
+      });
 
-      let req = null
-      let frame = 0
+      let req = null;
+      let frame = 0;
       const animate = () => {
-        req = requestAnimationFrame(animate)
+        req = requestAnimationFrame(animate);
 
-        frame = frame <= 100 ? frame + 1 : frame
+        frame = frame <= 100 ? frame + 1 : frame;
 
         if (frame <= 100) {
-          const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+          const p = initialCameraPosition;
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
 
-          camera.position.y = 10
+          camera.position.y = 8;
           camera.position.x =
-            p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+            p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
           camera.position.z =
-            p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
-          camera.lookAt(target)
+            p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed);
+          camera.lookAt(target);
         } else {
-          controls.update()
+          controls.update();
         }
 
-        renderer.render(scene, camera)
+        renderer.render(scene, camera);
       }
 
       return () => {
-        console.log('unmount')
-        cancelAnimationFrame(req)
-        renderer.dispose()
+        cancelAnimationFrame(req);
+        renderer.dispose();
       }
     }
   }, [])
 
   useEffect(() => {
-    window.addEventListener('resize', handleWindowResize, false)
+    window.addEventListener('resize', handleWindowResize, false);
     return () => {
-      window.removeEventListener('resize', handleWindowResize, false)
+      window.removeEventListener('resize', handleWindowResize, false);
     }
-  }, [renderer, handleWindowResize])
+  }, [renderer, handleWindowResize]);
 
   return (
     <AstronautContainer ref={refContainer}>{loading && <AstronautSpinner />}</AstronautContainer>
   )
 }
 
-export default VoxelAstronaut
+export default VoxelAstronaut;

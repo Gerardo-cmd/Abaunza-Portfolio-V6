@@ -2,7 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { JobGridItem } from '../components/grid-item'
-import { Meta } from '../components/work'
+import { Meta } from '../components/project'
 
 import CmtLogo from '../public/images/cmt-logo.jpeg'
 
