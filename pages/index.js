@@ -55,7 +55,7 @@ const Page = () => {
             </Box>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                Work
+                About
                 </Heading>
                 <Paragraph>
                 Gerardo is a Software Engineer based in Northern Virginia with a

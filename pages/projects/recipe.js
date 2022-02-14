@@ -24,7 +24,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Javascript, HTML, CSS, Bootstrap, Node.js, Express, PostgreSQL</span>
+          <span>Javascript, HTML, CSS, Bootstrap, Node.js, Express, PostgreSQL, Netlify (Frontend), Heroku (Backend)</span>
         </ListItem>
       </List>
 

@@ -22,7 +22,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, Typescript, MaterialUI, Node.js, Express, Firebase</span>
+          <span>React, Typescript, MaterialUI, Node.js, Express, Firebase, Netlify (Frontend), Heroku (Backend)</span>
         </ListItem>
       </List>
 
