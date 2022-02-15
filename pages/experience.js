@@ -16,7 +16,7 @@ const Experience = () => (
       <SimpleGrid columns={[1, 2]} gap={6}>
         <Section delay={0.1}>
           <JobGridItem id="cmtsolutions" title="CMT Solutions" thumbnail={CmtLogo} bold>
-            <h2>2021</h2>
+            <h2>2021 - Present</h2>
             <Meta>Position</Meta>
             <p>Software Engineer Intern</p>
           </JobGridItem>
