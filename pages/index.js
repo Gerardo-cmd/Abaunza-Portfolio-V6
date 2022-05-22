@@ -61,8 +61,8 @@ const Page = () => {
                 Gerardo is a Software Engineer based in Northern Virginia with a
                 passion for building software. When not online, he loves
                 hanging out with his friends and loved ones or cuddling up in his room. Currently, he is working at{' '}
-                <NextLink href="/experiences/cmtsolutions">
-                    <Link>CMT Solutions</Link>
+                <NextLink href="/experiences/coursera">
+                    <Link>Coursera</Link>
                 </NextLink>
                 .
                 </Paragraph>
@@ -89,11 +89,11 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                 <BioYear>2021</BioYear>
-                    Began working at CMT Solutions
+                    Began interning at CMT Solutions
                 </BioSection>
                 <BioSection>
                 <BioYear>2022</BioYear>
-                    Completed his Bachelor&apos;s in Computer Science at George Mason Universiy
+                    Completed his Bachelor&apos;s in Computer Science at George Mason University and began working at Coursera
                 </BioSection>
                 
             </Section>
