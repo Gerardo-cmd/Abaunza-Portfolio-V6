@@ -39,11 +39,11 @@ const Projects = () => (
           Collaborations
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-            <Section>
-                <WorkGridItem id="recipe" title="Recipe Application" thumbnail={thumbRecipe}>
-                    2021
-                </WorkGridItem>
-            </Section>
+          <Section>
+            <WorkGridItem id="recipe" title="Recipe Application" thumbnail={thumbRecipe}>
+              2021
+            </WorkGridItem>
+          </Section>
         </SimpleGrid>
       </Section>
     </Container>

@@ -12,17 +12,17 @@ const Experience = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, Javascript, Node.js, Java, AWS</span>
+          <span>React, Typescript, GraphQL, AWS</span>
         </ListItem>
         <br />
         <ListItem>
-            <P>
-                <ul>
-                    <li>Implemented features using React.js, Typescript, Node.js, and Java.</li>
-                    <li>Worked in a cross functional team of Engineers, PMs, Designers, Data Scientists, UX Researchers, and Marketing.</li>
-                    <li>Setup monitoring and testing of APIs and services to better understand real time health of products.</li>
-                </ul>
-            </P>
+          <P>
+            <ul>
+              <li>Implemented features for frontend using React.js, Typescript, and GraphQL.</li>
+              <li>Worked in a cross functional team of Engineers, PMs, and Marketing.</li>
+              <li>Contributed to monitoring and testing of APIs and services to better understand real time health of products.</li>
+            </ul>
+          </P>
         </ListItem>
       </List>
     </Container>
