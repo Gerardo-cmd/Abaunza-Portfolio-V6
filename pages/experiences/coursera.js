@@ -20,7 +20,7 @@ const Experience = () => (
      	    <ul>
               <li>Worked in a cross functional team of Engineers, Designers, Product Managers, and Marketing.</li>
 	      <li>Implemented features for frontend using React, Typescript, and GraphQL.</li>
-	      <li>Took ownership in different components which entails scoping, maintaing for bugs, etc.</li>
+	      <li>Took ownership in different components which entails scoping, maintaining for bugs, etc.</li>
 	      <li>Contributed to unit tests and end-to-end tests using Jest, React Testing Library, and Puppeteer.</li>
 	      <li>Delivered on new features for different milestones/projects along with Epics (A/B Testing).</li>
 	      <li>Worked on Epic Cleanups which resulted in tens of thousands of lines of unused codes being deleted, thereby reducing tech debt.</li>
