@@ -17,14 +17,14 @@ const Experience = () => (
         <br />
         <ListItem>
           <P>
-     	    <ul>
+     	      <ul>
               <li>Worked in a cross functional team of Engineers, Designers, Product Managers, and Marketing.</li>
-	      <li>Implemented features for frontend using React, Typescript, and GraphQL.</li>
-	      <li>Took ownership in different components which entails scoping, maintaining for bugs, etc.</li>
-	      <li>Contributed to unit tests and end-to-end tests using Jest, React Testing Library, and Puppeteer.</li>
-	      <li>Delivered on new features for different milestones/projects along with Epics (A/B Testing).</li>
-	      <li>Worked on Epic Cleanups which resulted in tens of thousands of lines of unused codes being deleted, thereby reducing tech debt.</li>
-	      <li>Partook in developer activites such as code reviews, sprint planning, and quarterly retrospectives.</li>
+              <li>Implemented features for frontend using React, Typescript, and GraphQL.</li>
+              <li>Contributed to unit tests and end-to-end tests using Jest, React Testing Library, and Puppeteer.</li>
+              <li>Delivered on projects that increased our views for our degree description pages by about 15%.</li>
+              <li>Contributed to a project that updated and improved our UI in order to increase our visual cohesion across all premium hub pages.</li>
+              <li>Led the effort to revamp my team's end-to-end tests and contributed to Java and HOC migrations.</li>
+              <li>Partook in developer activites such as code reviews, sprint planning, and retrospectives.</li>
             </ul>
           </P>
         </ListItem>
