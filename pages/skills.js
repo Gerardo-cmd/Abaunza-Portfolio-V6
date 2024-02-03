@@ -42,7 +42,6 @@ const Skills = () => (
                 <SimpleGrid columns={2} gap={1}>
                   <GridItem id="GitHub" title="GitHub" />  
                   <GridItem id="Jira" title="Jira" />
-                  <GridItem id="Confluence" title="Confluence" />
                   <GridItem id="Scrum & Agile" title="Scrum & Agile" />
                   <GridItem id="Netlify" title="Netlify" />
                   <GridItem id="Vercel" title="Vercel" />
