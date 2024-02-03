@@ -23,7 +23,7 @@ const Experience = () => (
               <li>Contributed to unit tests and end-to-end tests using Jest, React Testing Library, and Puppeteer.</li>
               <li>Delivered on projects that increased our views for our degree description pages by about 15%.</li>
               <li>Contributed to a project that updated and improved our UI in order to increase our visual cohesion across all premium hub pages.</li>
-              <li>Led the effort to revamp my team's end-to-end tests and contributed to Java and HOC migrations.</li>
+              <li>Led the effort to revamp my team&apos;s end-to-end tests and contributed to Java and HOC migrations.</li>
               <li>Partook in developer activites such as code reviews, sprint planning, and retrospectives.</li>
             </ul>
           </P>
