@@ -89,7 +89,7 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                 <BioYear>2021</BioYear>
-                    Began interning at CMT Solutions
+                    Began interning at CMT Solutions &lpar;Now Careviso&rpar;
                 </BioSection>
                 <BioSection>
                 <BioYear>2022</BioYear>
@@ -103,7 +103,7 @@ const Page = () => {
                 I ♥
                 </Heading>
                 <Paragraph>
-                Anime, Games, Music, Space
+                Anime, Games, Music, Space, Cats
                 </Paragraph>
             </Section>
         </Container>
